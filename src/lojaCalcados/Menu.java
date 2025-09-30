@@ -3,6 +3,8 @@ package lojaCalcados;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import lojaCalcados.model.Bolsas;
+import lojaCalcados.model.Calcados;
 import lojaCalcados.util.Cores;
 
 public class Menu {
@@ -13,6 +15,12 @@ public class Menu {
 	public static void main(String[] args) {
 
 		int opcao;
+		
+		Calcados c1 = new Calcados(1, "Anabela Prata", 1, 250.00f, "Anabela");
+		c1.visualizar();
+		
+	    Bolsas b1 = new Bolsas(2, "Bolsa Preta", 2, 150.00f, "Bolsa");
+        b1.visualizar();
 
 		// Laço de repetição que mantém o menu rodando até a opção sair ser acionada
 		while (true) {
